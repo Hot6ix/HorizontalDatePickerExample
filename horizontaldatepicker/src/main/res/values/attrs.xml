@@ -4,8 +4,8 @@
         <attr name="dateTextColor" format="color" />
         <attr name="dateTextSize" format="dimension" />
         <attr name="listItemTextColor" format="color" />
-        <attr name="highlightStrokeColor" format="color" />
-        <attr name="highlightStrokeWidth" format="dimension" />
+        <attr name="selectorStrokeColor" format="color" />
+        <attr name="selectorStrokeWidth" format="dimension" />
         <attr name="enableWeekendHighlight" format="boolean" />
     </declare-styleable>
 </resources>

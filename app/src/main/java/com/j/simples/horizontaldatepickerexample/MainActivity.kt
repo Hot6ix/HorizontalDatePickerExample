@@ -19,14 +19,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-
-        horizontalDatePicker.apply {
-            horizontalDatePicker.
-            setDate(Calendar.getInstance().apply { set(2010, 0, 1) })
-            setDateFormat("yyyy-MM-dd")
-            setHighlighterColor(Color.GRAY)
-            setHighlighterWidth(8)
-            enableWeekendHighlight(true)
-        }
     }
 }
