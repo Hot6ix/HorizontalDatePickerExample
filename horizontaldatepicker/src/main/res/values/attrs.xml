@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalDatePicker">
+        <attr name="dateTextColor" format="color" />
+        <attr name="dateTextSize" format="dimension" />
+        <attr name="listItemTextColor" format="color" />
+        <attr name="highlightStrokeColor" format="color" />
+        <attr name="highlightStrokeWidth" format="dimension" />
+        <attr name="enableWeekendHighlight" format="boolean" />
+    </declare-styleable>
+</resources>

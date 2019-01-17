@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sunday_highlight">#ef5350</color>
+    <color name="saturday_highlight">#42a5f5</color>
+    <color name="default_gray">#eeeeee</color>
+</resources>

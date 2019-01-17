@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="date_name_size">16sp</dimen>
+    <dimen name="day_name_size">12sp</dimen>
+    <dimen name="day_size">20sp</dimen>
+    <dimen name="day_name_padding">10dp</dimen>
+    <dimen name="date_picker_padding">10dp</dimen>
+    <dimen name="day_item_padding">5dp</dimen>
+</resources>
