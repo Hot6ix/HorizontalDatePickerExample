@@ -1,6 +1,18 @@
 # HorizontalDatePickerExample
-HorizontalDatePicker is a simple library that can select a date by scroll horizontally.
+HorizontalDatePicker is a simple library that can select a date by scroll horizontally.  
 Also it automatically loads next month if user scroll from month to another month, this can make user to scroll endless.
+
+* #### Basic
+![Image](https://imgur.com/bTnlrOm.png)  
+
+* #### Basic with weekend highlight enabled
+![Image](https://imgur.com/mdLJF0Q.png)
+
+* #### Scrolling
+![Image](https://imgur.com/9H7GDHt.png)
+
+* #### Endless scrolling
+![Image](https://imgur.com/prDro8R.png)
 
 ## Requirement
 * Minimum SDK version 16+
