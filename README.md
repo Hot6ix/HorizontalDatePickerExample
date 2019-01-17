@@ -8,10 +8,10 @@ Also it automatically loads next month if user scroll from month to another mont
 * #### Basic with weekend highlight enabled
 ![Image](https://imgur.com/mdLJF0Q.png)
 
-* #### Scrolling
+* #### Scroll
 ![Image](https://imgur.com/9H7GDHt.png)
 
-* #### Endless scrolling
+* #### Endless scroll
 ![Image](https://imgur.com/prDro8R.png)
 
 ## Requirement
