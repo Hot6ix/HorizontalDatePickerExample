@@ -22,8 +22,8 @@ class HorizontalDatePicker: ConstraintLayout, OnScrolledListener {
     private var mDateTextColor: Int = 0
     private var mDateTextSize: Float = 0f
     private var mListItemTextColor: Int = 0
-    private var mHighlightStrokeColor: Int = 0
-    private var mHighlightStrokeWidth: Int = 0
+    private var mSelectorStrokeColor: Int = 0
+    private var mSelectorStrokeWidth: Int = 0
     private var mEnableWeekendHighlight: Boolean = false
 
     // Etc
@@ -55,8 +55,8 @@ class HorizontalDatePicker: ConstraintLayout, OnScrolledListener {
                 mDateTextColor = getColor(R.styleable.HorizontalDatePicker_dateTextColor, Color.GRAY)
                 mDateTextSize = getDimension(R.styleable.HorizontalDatePicker_dateTextSize, 18f)
                 mListItemTextColor = getColor(R.styleable.HorizontalDatePicker_listItemTextColor, Color.GRAY)
-                mHighlightStrokeColor = getColor(R.styleable.HorizontalDatePicker_highlightStrokeColor, Color.GRAY)
-                mHighlightStrokeWidth = getDimensionPixelSize(R.styleable.HorizontalDatePicker_highlightStrokeWidth, 5)
+                mSelectorStrokeColor = getColor(R.styleable.HorizontalDatePicker_selectorStrokeColor, Color.GRAY)
+                mSelectorStrokeWidth = getDimensionPixelSize(R.styleable.HorizontalDatePicker_selectorStrokeWidth, 5)
                 mEnableWeekendHighlight = getBoolean(R.styleable.HorizontalDatePicker_enableWeekendHighlight, false)
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -76,7 +76,7 @@ class HorizontalDatePicker: ConstraintLayout, OnScrolledListener {
         // init highlighter
         selector = findViewById(R.id.selector)
         (selector.background as GradientDrawable).apply {
-            setStroke(mHighlightStrokeWidth, mHighlightStrokeColor)
+            setStroke(mSelectorStrokeWidth, mSelectorStrokeColor)
         }
 
         // init recyclerview
@@ -126,19 +126,19 @@ class HorizontalDatePicker: ConstraintLayout, OnScrolledListener {
         }
     }
 
-    fun setHighlighterColor(color: Int) {
-        mHighlightStrokeColor = color
-        applyHighlighter()
+    fun setSelectorStrokeColor(color: Int) {
+        mSelectorStrokeColor = color
+        applySelector()
     }
 
-    fun setHighlighterWidth(size: Int) {
-        mHighlightStrokeWidth = size
-        applyHighlighter()
+    fun setSelectorStrokeWidth(size: Int) {
+        mSelectorStrokeWidth = size
+        applySelector()
     }
 
-    private fun applyHighlighter() {
+    private fun applySelector() {
         (selector.background as GradientDrawable).apply {
-            setStroke(mHighlightStrokeWidth, mHighlightStrokeColor)
+            setStroke(mSelectorStrokeWidth, mSelectorStrokeColor)
         }
     }
 
